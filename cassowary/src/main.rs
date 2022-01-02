@@ -12,8 +12,7 @@ fn hex_to_decimal(mem: &mut Memory) -> Result<(), MemoryError> {
     // http://www.CHIP-8.com/
     // hex to decimal
     progloader::load_from_hex(
-        "0000   1200
-         0200   00E0 6380 6400 6500 A500 F333 F265 F029
+        "0200   00E0 6380 6400 6500 A500 F333 F265 F029
          0210   D455 F129 7408 D455 F229 7408 D455 F000
         ",
         mem,
@@ -74,7 +73,7 @@ fn scratch(mem: &mut Memory) -> Result<(), MemoryError> {
 }
 
 fn load_program(mem: &mut Memory) -> Result<(), MemoryError> {
-    match 2 {
+    match 3 {
         1 => hex_to_decimal(mem),
         2 => scratch(mem),
         3 => display_a_hex_sprite(mem),

@@ -36,7 +36,7 @@ impl Timer {
         }
     }
 
-    pub fn tick_loop(&self) {
+    fn tick_loop(&self) {
         loop {
             select! {
                 recv(self.ticker) -> _tick => {
