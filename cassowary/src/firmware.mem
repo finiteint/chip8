@@ -1,0 +1,43 @@
+
+# Run program at 0x200: 
+# Programs always start running at 0x200
+0000   1200
+
+
+# Reserved: 0100 - 01FF 
+#
+# sprites for hex characters
+# This is based on the hex sprite chart
+# at http://devernay.free.fr/hacks/chip8/C8TECH10.HTM#font
+# 0
+0100   F0 90 90 90 F0
+# 1
+0105   20 60 20 20 70
+# 2
+010A   F0 10 F0 80 F0
+# 3
+010F   F0 10 F0 10 F0
+# 4
+0114   90 90 F0 10 10
+# 5
+0119   F0 80 F0 10 F0
+# 6
+011E   F0 80 F0 90 F0
+# 7
+0123   F0 10 20 40 40
+# 8
+0128   F0 90 F0 90 F0
+# 9
+012D   F0 90 F0 10 F0
+# A
+0132   F0 90 F0 90 90
+# B
+0137   E0 90 E0 90 E0
+# C
+013C   F0 80 80 80 F0
+# D
+0141   E0 90 90 90 E0
+# E
+0146   F0 80 F0 80 F0
+# F
+014B   F0 80 F0 80 80
